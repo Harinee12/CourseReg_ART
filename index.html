@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register for Art Courses</h1>
+        <img src="art image.jpg" alt="Art Tools" class="art-image">
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Your age" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+            
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="scrapbooking">Scrapbooking</option>
+                <option value="resin_art">Resin Art</option>
+                <option value="doodling">Doodling</option>
+                <option value="quilling">Quilling</option>
+            </select>
+            
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
